@@ -1,0 +1,525 @@
+/* Main CSS */
+
+/*
+  ========================================
+  Reset
+  ========================================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+/*  font: inherit;*/
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+    background-color: #808080;
+    width: 100%;
+    padding-bottom: 15px;
+/*    position: fixed;*/
+}
+
+.header img {
+    display: inline-block;
+    width: 20%;
+    margin: 22px 10px 0 22px;
+}
+
+.header-nav {
+    margin: 75px 75px 0 0;
+    float: right;
+    font-size: 17px;
+    text-transform: uppercase
+}
+
+.header-nav a {
+    display: inline-block;
+    margin: 0 30px;
+    color: white;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    display: inline-block;
+    margin: 0 30px;
+    color: #93B418;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: #93B418;
+    color: white;
+    border-radius: 8px;
+    margin-left: 30px;
+    font-size: 25px;
+}
+
+.button-alt:hover {
+    color: #93B418;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer {
+    width: 100%;
+    clear: both;
+    background-color: #808080;
+    padding: 10px 10px 25px 10px;
+}
+
+.socials {
+    display: inline-block;
+    padding: 2px;
+    margin: 0 10px 0 10px;
+}
+
+.socials:hover {
+    display: inline-block;
+    padding: 2px;
+    margin: 0 10px 0 10px;
+    cursor: pointer;
+}
+
+.footer-nav {
+    display: inline-block;
+    width: 450px;
+    height: 25px;
+    font-size: 15px;
+    margin-left: 90px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-nav a:hover {
+    color: #93B418;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.copyright {
+    float: right;
+    font-size: 10px;
+    margin-top: -11px;
+}
+
+
+/*
+  ========================================
+  Header Alternates
+  ========================================
+*/
+
+#about-page {
+    color: #93B418;
+}
+
+#menu-page {
+    color: #93B418;
+}
+
+#contact-page {
+    color: #93B418;
+}
+
+
+/*
+  ========================================
+  Feature
+  ========================================
+*/
+
+#owl-demo .item img{
+    display: block;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+/*
+  ========================================
+  Side Pane
+  ========================================
+*/
+
+.side-pane {
+    float: right;
+    width: 33.33%;
+    border-left: 4px solid #808080;
+    padding-left: 40px;
+    margin-right: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.toggle h3 {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+    padding: 15px 4px;
+    font-size: 17.5px;
+}
+
+.toggle > * {
+    background-color: #F2F2F2;
+}
+
+.toggle:hover {
+    cursor: pointer;
+}
+
+.toggle .active {
+    background-color: #93B418;
+}
+
+.toggle-alt .active:hover {
+    color: white;
+}
+
+.toggle-alt .inactive:hover {
+    color: #808080;
+}
+
+.side-pane h4 {
+    font-size: 17px;
+    margin: 6px 0;
+}
+
+.side-pane p {
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.side-pane iframe {
+    width: 335px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+
+/*
+  ========================================
+  Info
+  ========================================
+*/
+
+.special {
+    margin-top: 25px;
+}
+
+.special, .programs {
+    width: 66.66%;
+    margin-left: 25px;
+}
+
+.special h2, .programs h2 {
+    font-size: 30px;
+    color: #93B418;
+    padding: 10px;
+}
+
+.special h3, .programs h3 {
+    font-size: 20px;
+    margin-left: 25px;
+}
+
+.special p, .programs p {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 40px 20px 40px;
+    line-height: 130%
+}
+
+.special p {
+    display: inline-block;
+    width: 50%;
+}
+
+.special img {
+    display: inline-block;
+    width: 20%;
+}
+
+.programs p {
+    width: 80%;
+}
+
+
+/*
+  ========================================
+  Story
+  ========================================
+*/
+
+.story {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.story h2 {
+    font-size: 30px;
+    color: #93B418;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.story p {
+    font-size: 15px;
+    padding: 10px;
+    margin: 0 25px 5px 25px;
+    line-height: 130%;
+}
+
+#para-2 {
+    margin-bottom: 50px;
+}
+
+
+/*
+  ========================================
+  Locations
+  ========================================
+*/
+
+.locations {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.locations h2 {
+    font-size: 30px;
+    color: #93B418;
+    margin-bottom: 20px;
+}
+
+.info-poway {
+    display: inline-block;
+    width: 49.5%;
+    padding: 10px 35px;
+}
+
+.info-rancho {
+    display: inline-block;
+    width: 49.5%;
+    padding: 10px 35px;
+    border-left: 4px solid #808080;
+}
+
+.locations h3 {
+    font-size: 22px;
+    margin: 0 0 12px 0;
+}
+
+.locations h4 {
+    font-size: 17px;
+    margin: 6px 10px;
+}
+
+.locations p {
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.locations iframe {
+    width: 350px;
+    margin-top: 30px;
+}
+
+
+/*
+  ========================================
+  Contact
+  ========================================
+*/
+
+.contact {
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 50px
+}
+
+.contact h2 {
+    font-size: 30px;
+    color: #93B418;
+    padding: 10px 0;
+}
+
+.contact p {
+    font-size: 15px;
+    padding: 10px;
+/*    margin: 0 25px 20px 25px;*/
+    line-height: 130%;
+    width: 97.4%;
+}
+
+
+/*
+  ========================================
+  Form
+  ========================================
+*/
+
+#contact {width:100%; height:100%; margin 0 auto }
+
+.container {width:960px; height:auto; margin: 0 auto; padding: 25px 0 50px 0;}
+
+#contact .container form input,
+#contact .container form textarea {
+	width:97.4%;
+	height:40px;
+	padding:5px 10px;
+	font-size: 12px;
+	color:#808080;
+	letter-spacing:1px;
+	border:2px solid #808080;
+	margin-bottom:25px;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form input:focus,
+#contact .container form textarea:focus {
+	border:2px solid #93B418;
+	color:#999;}
+
+#contact .container form textarea {
+	height:150px;}
+
+#contact .container form .submit {
+	width:100%;
+	padding:5px 10px;
+	font-size: 12px;
+	letter-spacing:1px;
+	background:#93B418;
+	height:40px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	color:#FFF;
+	border:2px solid #93B418;
+  -webkit-transition:all .1s ease-in-out;
+	-moz-transition:all .1s ease-in-out;
+	-ms-transition:all .1s ease-in-out;
+	-o-transition:all .1s ease-in-out;
+	transition:all .1s ease-in-out;}
+
+#contact .container form .submit:hover {
+	color:#93B418;
+	border:2px solid #93B418;
+	background: white;
+	cursor:pointer;}
+
+#contact .container form .required {
+	color:#93B418;}
+
+
+/*
+  ========================================
+  DOWNLOAD
+  ========================================
+*/
+
+
+a#DOWNLOAD {
+    display: block;
+    width: 180px;
+    text-decoration: none; 
+    color: white;
+    background-color: #93B418;
+    padding: 20px 25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 25px;
+}
+
+a#DOWNLOAD:hover {
+    background-color: #F2F2F2;
+    color: #93B418;
+}
+
+
+
+
+
+

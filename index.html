@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+     <title> Victor's Kafe </title>
+     <link rel="stylesheet" href="Stylesheets/main.css" >
+     <!-- Important Owl stylesheet -->
+<link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+ 
+<!-- Default Theme -->
+<link rel="stylesheet" href="owl-carousel/owl.theme.css">
+ 
+<!--  jQuery 1.7+  -->
+<script src="owl-carousel/jquery-1.9.1.min.js"></script>
+ 
+<!-- Include js plugin -->
+<script src="owl-carousel/owl.carousel.js"></script>
+     
+<script type="text/javascript">
+   $(document).ready(function() {
+       function toggle(clicked) {
+           if (clicked === "poway") {
+               $(".toggle #rancho").removeClass("active")
+               $(".toggle #poway").addClass("active")
+               $(".toggle #rancho").addClass("inactive")
+               $(".side-info-poway").toggle(true)
+               $(".side-info-rancho").toggle(false)
+           } else if (clicked === "rancho") {
+               $(".toggle #rancho").addClass("active")
+               $(".toggle #poway").removeClass("active")
+               $(".toggle #poway").addClass("inactive")
+               $(".side-info-poway").toggle(false)
+               $(".side-info-rancho").toggle(true)
+           }
+       }
+       $(".side-pane .toggle").children().click(function() {
+           toggle($(this).attr("id"))
+       })
+       toggle("rancho")
+   })
+</script>     
+ </head>
+
+ <body>
+     <section class="header">
+          <a href="index.html"><img src="Images/logo-06.png"></a>
+         <nav class="header-nav" >
+             <a href="menu.html">Menu</a>
+             <a href="about.html">About</a>
+             <a href="contact.html">Contact</a>
+             <div class="button button-alt"> Order </div>
+         </nav>
+         
+     </section>
+     
+     <section class="feature">
+         <div id="owl-demo" class="owl-carousel owl-theme">
+            <div class="item"><img src="Images/01.jpg" alt="Kafe Workers"></div>
+            <div class="item"><img src="Images/02.jpg" alt="Shrimp Plate"></div>
+            <div class="item"><img src="Images/03.jpg" alt="Kafe Store Front"></div>
+            <div class="item"><img src="Images/04.jpg" alt="Kebob Plate"></div>    
+         </div>
+     </section>
+     
+     <section class="side-pane">
+         <div class="toggle toggle-alt">
+             <h3 id="rancho">Rancho Benardo</h3>
+             <h3 id="poway">Poway</h3>
+         </div>
+         <div class="side-info-poway">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946.1230464819222!2d-117.03049759517423!3d32.939117252354144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb66433777cba1af0!2sVictor&#39;s+Kafe!5e0!3m2!1sen!2sus!4v1478558970176" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <h4>Adress :</h4>
+                <p>14057 Stowe Drive STE 104 <br>
+                    Poway, CA 92064</p>
+             <h4>Phone</h4>
+                 <p>(858)668-1717</p>
+             <h4>Hours</h4>
+                 <p>Monday - Saturday <br>
+                     10:00 AM - 9:00 PM <br>
+                     Sunday <br>
+                     Closed</p>
+         </div>
+         <div class="side-info-rancho">
+             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13383.841977694108!2d-117.09113!3d33.004817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dbf73780b00073%3A0x9e79b661dfa967b6!2s15817+Bernardo+Center+Dr%2C+San+Diego%2C+CA+92127!5e0!3m2!1sen!2sus!4v1478559111286" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+             <h4>Adress :</h4>
+                <p>15817 Bernardo Center Drive <br>
+                    San Diego, CA 92127</p>
+             <h4>Phone</h4>
+                 <p>(858)451-9992</p>
+             <h4>Hours</h4>
+                 <p>Monday - Saturday <br>
+                     10:00 AM - 9:00 PM <br>
+                     Sunday <br>
+                     Closed</p>
+         </div>
+     </section>
+     
+     <section class="special">
+         <h2>Monthly Special</h2>
+            <h3>Spicy Gyros Combo</h3>
+            <p>Thinly sliced combo of spicy beef & lamb cooked on a vertical rotisserie served in a pita with tomatoes &  onions. Combo comes with your choice of 2 sides : fries, tossed salad, or rice.</p>
+         <img src="Images/Spicy-Gyro-Combo-255x200.jpg">
+     </section>
+     
+     <section class="programs">
+         <h2>Programs</h2>
+            <h3>Catering</h3>
+            <p>Victor´s Kafé does full service catering, which provides you with utensils, chafing trays, table linens and are always open for requests. Victor´s Kafé caterings are ideal for corporate events, weddings, and other special events.</p>
+            <h3>Fundraising</h3>
+            <p>If you are looking for any fundraiser, Victors kafe allows one easiest and innovative way to earn money for your group. Just dine in or order to go at Victor’s kafe, and we are happy to share 15% of sales for all fundraisers. All fundraisers are tracked by a Victor’s Fundraising Code that can be used at either location or online.</p>
+     </section>
+     
+     <section class="footer">
+         <div class="socials">
+             <a href="https://www.facebook.com/VictorsKafe" target="_blank" ><img src="Images/FB-07.png"></a>
+         </div>
+         <div class="socials">
+             <a href="https://www.instagram.com/victorskafe/" target="_blank" ><img src="Images/INSTA-07.png" ></a>
+         </div>
+         <div class="socials">
+             <a href="https://twitter.com/victorskafe" target="_blank" ><img src="Images/TWIT-07.png" ></a>
+         </div>
+         <div class="socials">
+             <a href="https://www.yelp.com/biz/victors-kafe-poway" target="_blank" ><img src="Images/YELP-07.png" ></a>
+         </div>
+         <section class="footer-nav">
+         <nav  >
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+         </nav><!-- asdf
+         --><div class="copyright">
+            Copyright 2016 Victors Kafé. All Rights Reserved.
+         </div>
+         </div>     
+     </section>
+    
+     <script>
+        $(document).ready(function() {
+ 
+  $("#owl-demo").owlCarousel({
+ 
+      navigation : true, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      autoPlay: true,
+ 
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+ 
+  });
+ 
+});
+     </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
